@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "762273106262",
+    "firebase_url": "https://stindent.firebaseio.com",
+    "project_id": "stindent",
+    "storage_bucket": "stindent.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762273106262:android:88b090381064f895",
+        "android_client_info": {
+          "package_name": "com.matias.stindent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762273106262-3lu8je5fe22r5h65k4hdt9136jlp2fnb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7k8ZYQ75mmb66WXMRh8FJvcU9TbBRPDI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762273106262-3lu8je5fe22r5h65k4hdt9136jlp2fnb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
