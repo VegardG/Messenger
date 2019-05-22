@@ -46,8 +46,6 @@
                 android:layout_marginBottom="16dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
-                android:clickable="true"
-                android:onClick="cardClicked"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp">
             <RelativeLayout
@@ -55,11 +53,12 @@
                     android:layout_height="match_parent">
 
                 <CheckBox
-                        android:text="CheckBox"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:visibility="invisible"
-                        android:id="@+id/row1_colum1_checkbox"/>
+                        android:visibility="visible"
+                        android:id="@+id/row1_colum1_checkbox"
+                        android:button="@color/cardview_light_background"
+                        style="none"/>
             </RelativeLayout>
 
 
@@ -106,8 +105,20 @@
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
-                android:clickable="true"
-                android:onClick="cardClicked">
+                android:clickable="true">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:id="@+id/row1_colum2_checkbox"
+                        android:button="@color/cardview_light_background"
+                        style="none"/>
+            </RelativeLayout>
 
 
             <LinearLayout
@@ -151,7 +162,19 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:id="@+id/row1_colum3_checkbox"
+                        android:button="@color/cardview_light_background"
+                        style="none"/>
+            </RelativeLayout>
 
 
             <LinearLayout
@@ -196,7 +219,19 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:id="@+id/row2_colum1_checkbox"
+                        android:button="@color/cardview_light_background"
+                        style="none"/>
+            </RelativeLayout>
 
 
             <LinearLayout
@@ -242,7 +277,19 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:id="@+id/row2_colum2_checkbox"
+                        android:button="@color/cardview_light_background"
+                        style="none"/>
+            </RelativeLayout>
 
 
             <LinearLayout
@@ -286,7 +333,19 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible"
+                        android:id="@+id/row2_colum3_checkbox"
+                        android:button="@color/cardview_light_background"
+                        style="none"/>
+            </RelativeLayout>
 
 
             <LinearLayout
@@ -331,7 +390,7 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout
@@ -375,7 +434,7 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout
@@ -419,7 +478,7 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout
@@ -463,7 +522,7 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout
@@ -507,7 +566,7 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout
@@ -551,7 +610,7 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout
@@ -595,7 +654,7 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout
@@ -639,7 +698,7 @@
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
                 android:clickable="true"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout
@@ -682,7 +741,7 @@
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
                 app:cardCornerRadius="8dp"
-                android:onClick="cardClicked">
+                >
 
 
             <LinearLayout

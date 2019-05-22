@@ -23,7 +23,6 @@ class UserFilterActivity : AppCompatActivity() {
                 row1_colum1_cardview.setCardBackgroundColor(Color.WHITE)
             }
 
-
         }
 
 
@@ -31,7 +30,7 @@ class UserFilterActivity : AppCompatActivity() {
     var isClicked = 0
 
 
-    fun cardClicked(view: View){
+    /*fun cardClicked(view: View){
         val cardSelected = view as CardView
         var cardCell = 0
 
@@ -63,7 +62,7 @@ class UserFilterActivity : AppCompatActivity() {
         //cardAddedToUser(cardCell, cardSelected, isClicked)
 
 
-    }
+    }*/
     private fun markCardForUser(cardCell: Int, cardSelected: CardView){
         userInterests.add(cardCell)
         cardSelected.setCardBackgroundColor(Color.GREEN)
