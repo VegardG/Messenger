@@ -14,6 +14,7 @@ import com.matias.stindent.messages.NewMessageActivity.Companion.USER_KEY
 import com.matias.stindent.models.ChatMessage
 import com.matias.stindent.registerlogin.RegisterActivity
 import com.matias.stindent.registerlogin.User
+import com.matias.stindent.registerlogin.UserFilterActivity
 import com.matias.stindent.views.LatestMessageRow
 import com.squareup.picasso.Picasso
 import com.xwray.groupie.GroupAdapter
@@ -127,6 +128,11 @@ class LatestMessagesActivity : AppCompatActivity() {
                 val intent = Intent(this, RegisterActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
+            }
+            R.id.menu_profile_filter -> {
+                val intent = Intent(this, UserFilterActivity::class.java)
+                startActivity(intent)
+
             }
         }
         return super.onOptionsItemSelected(item)

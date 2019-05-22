@@ -32,20 +32,35 @@
             android:columnOrderPreserved="false"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:padding="2dp">
+            android:padding="2dp"
+            android:layout_alignParentStart="true">
 
         <!-- row1 -->
         <!-- colum 1 -->
         <android.support.v7.widget.CardView
-            android:layout_height="0dp"
-            android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+                android:id="@+id/row1_colum1_cardview"
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:clickable="true"
+                android:onClick="cardClicked"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <CheckBox
+                        android:text="CheckBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="invisible"
+                        android:id="@+id/row1_colum1_checkbox"/>
+            </RelativeLayout>
 
 
             <LinearLayout
@@ -58,19 +73,11 @@
                     android:layout_height="68dp">
 
 
-
                 <de.hdodenhof.circleimageview.CircleImageView
                         android:src="@drawable/download"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:layout_gravity="center_horizontal"/>
-
-                <CheckBox
-                        android:text="Kunst"
-                        android:layout_gravity="fill_horizontal"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/checkBox"/>
 
                 <TextView
                         android:text="Kunst"
@@ -83,11 +90,13 @@
                         />
 
 
+
             </LinearLayout>
         </android.support.v7.widget.CardView>
 
         <!-- colum 2 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row1_colum2_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -96,7 +105,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -129,6 +140,7 @@
 
         <!-- colum 3 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row1_colum3_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -137,7 +149,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -171,6 +185,7 @@
         <!-- row2 -->
         <!-- colum 1 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row2_colum1_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -179,7 +194,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -214,6 +231,7 @@
 
         <!-- colum 2 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row2_colum2_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -222,7 +240,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -255,6 +275,7 @@
 
         <!-- colum 3 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row2_colum3_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -263,7 +284,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -297,6 +320,7 @@
         <!-- row3 -->
         <!-- colum 1 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row3_colum1_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -305,7 +329,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -338,6 +364,7 @@
 
         <!-- colum 2 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row3_colum2_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -346,7 +373,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -379,6 +408,7 @@
 
         <!-- colum 3 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row3_colum3_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -387,7 +417,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -420,6 +452,7 @@
         <!-- row4 -->
         <!-- colum 1 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row4_colum1_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -428,7 +461,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -461,6 +496,7 @@
 
         <!-- colum 2 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row4_colum2_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -469,7 +505,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -502,6 +540,7 @@
 
         <!-- colum 3 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row4_colum3_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -510,7 +549,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -543,6 +584,7 @@
         <!-- row5 -->
         <!-- colum 1 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row5_colum1_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -551,7 +593,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -584,6 +628,7 @@
 
         <!-- colum 2 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row5_colum2_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -592,7 +637,9 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:clickable="true"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
@@ -625,6 +672,7 @@
 
         <!-- colum 3 -->
         <android.support.v7.widget.CardView
+                android:id="@+id/row5_colum3_cardview"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
                 android:layout_columnWeight="1"
@@ -633,7 +681,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 app:cardElevation="8dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="cardClicked">
 
 
             <LinearLayout
