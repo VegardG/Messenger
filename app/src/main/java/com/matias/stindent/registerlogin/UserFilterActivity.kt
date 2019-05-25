@@ -15,6 +15,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 import com.matias.stindent.R
 import com.matias.stindent.messages.LatestMessagesActivity
+import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.android.synthetic.main.activity_user_filter.*
 
 class UserFilterActivity : AppCompatActivity() {
@@ -64,7 +65,8 @@ class UserFilterActivity : AppCompatActivity() {
     private fun saveInterestsToUser(interests: ArrayList<Int>){
         val user = FirebaseAuth.getInstance().uid ?: ""
         if(user == null) return
-        val ref = FirebaseDatabase.getInstance().getReference("/user-interests/$user")
+        val ref = FirebaseDatabase.getInstance().getReference("/users/$user/user-interests")
+
         ref.setValue(interests)
             .addOnSuccessListener {
                 Log.d("UserFilter", "successfully saved interests")

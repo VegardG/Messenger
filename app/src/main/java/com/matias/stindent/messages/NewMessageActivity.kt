@@ -41,7 +41,7 @@ class NewMessageActivity : AppCompatActivity() {
     private fun getUserInterests(){
         val user = FirebaseAuth.getInstance().uid ?: ""
         if(user == null) return
-        val ref = FirebaseDatabase.getInstance().getReference("/user-interests/$user")
+        val ref = FirebaseDatabase.getInstance().getReference("/user/$user/user-interests")
         ref.addListenerForSingleValueEvent(object: ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 p0.children.forEach {
@@ -57,7 +57,7 @@ class NewMessageActivity : AppCompatActivity() {
         )
     }
     private fun getOtherUserInterests(){
-        val ref = FirebaseDatabase.getInstance().getReference("/user-interests")
+        val ref = FirebaseDatabase.getInstance().getReference("/user/uid/user-interests")
         ref.addListenerForSingleValueEvent(object: ValueEventListener {
             override fun onDataChange(p0: DataSnapshot) {
                 p0.children.forEach {
@@ -72,12 +72,10 @@ class NewMessageActivity : AppCompatActivity() {
         })
     }
 
-
     private fun fetchUsers(){
         val ref = FirebaseDatabase.getInstance().getReference("/users")
-        //val refInterests = FirebaseDatabase.getInstance().getReference("/user-interests")
-        //getUserInterests()
-        //getOtherUserInterests()
+        getUserInterests()
+        getOtherUserInterests()
 
         ref.addListenerForSingleValueEvent(object: ValueEventListener {
 
@@ -88,11 +86,9 @@ class NewMessageActivity : AppCompatActivity() {
                     Log.d("NewMessage", it.toString())
                     val user = it.getValue(User::class.java)
                     if (user != null){
-                        adapter.add(UserItem(user))
-                        /*if (!Collections.disjoint(userInterests, otherUserInterests )){
+                        if(!Collections.disjoint(userInterests, otherUserInterests)){
                             adapter.add(UserItem(user))
-                        }*/
-
+                        }
                     }
                 }
 

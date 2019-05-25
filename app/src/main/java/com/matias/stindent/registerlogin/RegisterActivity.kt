@@ -17,6 +17,7 @@ import com.matias.stindent.messages.LatestMessagesActivity
 import kotlinx.android.parcel.Parcelize
 import kotlinx.android.synthetic.main.activity_register.*
 import java.util.*
+import kotlin.collections.ArrayList
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -109,9 +110,10 @@ class RegisterActivity : AppCompatActivity() {
     private fun saveUserToFirebaseDatabase(profileImageUrl: String){
         val uid = FirebaseAuth.getInstance().uid ?: ""
         val ref = FirebaseDatabase.getInstance().getReference("/users/$uid")
+        val ArrayList = ArrayList<Int>(0)
 
         val user =
-            User(uid, username_editxt_register.text.toString(), profileImageUrl)
+            User(uid, username_editxt_register.text.toString(), profileImageUrl, ArrayList)
 
         ref.setValue(user)
             .addOnSuccessListener {
@@ -130,6 +132,6 @@ class RegisterActivity : AppCompatActivity() {
 
 
 @Parcelize
-class User(val uid: String, val username: String, val profileImageUrl: String): Parcelable {
-    constructor() : this("", "", "")
+class User(val uid: String, val username: String, val profileImageUrl: String, val userInterests: ArrayList<Int>): Parcelable {
+    constructor() : this("", "", "", ArrayList(0))
 }
